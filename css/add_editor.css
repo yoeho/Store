@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#6B6A95, #292939);
+  text-align: center;
+  color: #292939;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
+}
+
+h1 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  max-width: 500px;
+  background: rgba(238, 238, 238, 0.1);
+  margin: 50px auto;
+  border-radius: 5px;
+  padding: 40px;
+}
+
+.formItem {
+  margin: 45px;
+  position: relative;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #E6F2E3;
+    position: absolute;
+    top: calc(85% + 3px);
+    left: calc(50% - 5px);
+    transform: rotate(45deg);
+    transition: all 0.7s;
+}
+
+.formItemFilled {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #E6F2E3;
+    position: absolute;
+    top: calc(85% + 3px);
+    left: 85%;
+    transform: rotate(135deg);
+}
+
+label { 
+  display: block;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #4DD9B2;
+  outline: none;
+  padding-bottom: 5px;
+  width: 75%;
+}
+
+input[type="submit"] {
+  background: #292939;
+  color: #E6F2E3;
+  padding: 20px;
+  border-bottom: 3px solid #4DD9B2;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+    background: lighten(#292939, 5);
+}
+
+.doesNotMatch, .passwordShort {
+  display: none;
+  background: #4DD9B2;
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.5em;
+  box-shadow: 1px 2px 1px #222;
+}
+
+.show {
+  display: block;
+}
